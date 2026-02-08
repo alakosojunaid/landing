@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alakoso Kabir Global Ventures</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="agri.jpg" alt="Logo">
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Advanced Agricultural Protection</h1>
+        <p>Premium Herbicides, Insecticides, Sprayers & Agrocides</p>
+        <button onclick="scrollToProducts()">Explore Products</button>
+    </div>
+</section>
+
+<section class="products" id="products">
+    <h2>Our Products</h2>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="force.webp" alt="Herbicide">
+            <h3>Herbicides</h3>
+            <p>Effective weed control solutions.</p>
+            <a href="herbicides.html" class="btn">Learn More</a>
+        </div>
+
+        <div class="product-card">
+            <img src="ins.webp" alt="Insecticide">
+            <h3>Insecticides</h3>
+            <p>Powerful insect protection.</p>
+            <a href="insectisides.html" class="btn">Learn More</a>
+        </div>
+
+        <div class="product-card">
+            <img src="spray.webp" alt="Sprayer">
+            <h3>Sprayers</h3>
+            <p>High-efficiency spraying systems.</p>
+            <a href="sprayer.html" class="btn">Learn More</a>
+        </div>
+
+        <div class="product-card">
+            <img src="agro.webp" alt="Agrocide">
+            <h3>Agrocides</h3>
+            <p>Complete crop disease control.</p>
+            <a href="Agrocides.html" class="btn">Learn More</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 AgroShield Solutions</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
