@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up - AgroShield</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* FULL SCREEN CENTER */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to right, #1b5e20, #4caf50);
+}
+
+/* SIGNUP CARD */
+.signup-container{
+    background:white;
+    width:350px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+/* LOGO */
+.signup-container img{
+    width:100px;
+    margin-bottom:15px;
+}
+
+/* TITLE */
+.signup-container h2{
+    margin-bottom:20px;
+    color:#2e7d32;
+}
+
+/* INPUTS */
+.signup-container input{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+/* BUTTON */
+.signup-container button{
+    width:100%;
+    padding:10px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.signup-container button:hover{
+    background:#1b5e20;
+}
+
+/* LOGIN LINK */
+.signup-container p{
+    margin-top:15px;
+    font-size:14px;
+}
+
+.signup-container a{
+    color:#2e7d32;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="signup-container">
+
+    <!-- LOGO -->
+    <img src="images/logo.png" alt="AgroShield Logo">
+
+    <h2>Create Account</h2>
+
+    <form onsubmit="handleSignup(event)">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <p>Already have an account? <a href="login.html">Login</a></p>
+
+</div>
+
+<script>
+function handleSignup(e){
+    e.preventDefault();
+    alert("Account Created Successfully!");
+}
+</script>
+
+</body>
+</html>
