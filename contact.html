@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - AgroShield</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* PAGE LAYOUT USING FLEX */
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#1b5e20;
+}
+
+nav img{
+    width:120px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* MAIN CONTACT SECTION */
+.contact-wrapper{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4f8f2;
+    padding:40px;
+}
+
+.contact-container{
+    width:420px;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    text-align:center;
+}
+
+/* FORM */
+.contact-container h2{
+    margin-bottom:20px;
+    color:#2e7d32;
+}
+
+.contact-container form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-container input,
+.contact-container textarea{
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+.contact-container button{
+    padding:10px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.contact-container button:hover{
+    background:#1b5e20;
+}
+
+/* CONTACT INFO LINKS */
+.contact-info{
+    margin-top:20px;
+    font-size:14px;
+}
+
+.contact-info a{
+    display:block;
+    margin-top:8px;
+    color:#1b5e20;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <img src="agri.jpg" alt="AgroShield Logo">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+</nav>
+
+<!-- CONTACT SECTION -->
+<div class="contact-wrapper">
+
+    <div class="contact-container">
+
+        <h2>Contact AgroShield</h2>
+
+        <form onsubmit="handleContact(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p>Or reach us directly:</p>
+
+            <!-- EMAIL -->
+            <a href="alakosokabir37@gmail.com">
+                📧 alakosokabir37@gmail.com
+            </a>
+
+            <!-- PHONE -->
+            <a href="tel:+2348029606558">
+                📞 +234 802 960 6558
+            </a>
+
+            <!-- WHATSAPP -->
+            <a href="https://wa.me/2349167420452" target="_blank">
+                💬 Chat on WhatsApp
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 AgroShield Agricultural Solutions
+</footer>
+
+<script>
+function handleContact(e){
+    e.preventDefault();
+    alert("Thank you! We will contact you shortly.");
+}
+</script>
+
+</body>
+</html>
