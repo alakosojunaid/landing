@@ -51,12 +51,11 @@ nav a{
     text-align:center;
 }
 
-.product-container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:30px;
-    margin-top:40px;
+.product-container {
+    display: flex;
+    flex-wrap: wrap;   /* allows wrapping */
+    justify-content: center;
+    gap: 20px;
 }
 
 .product-card{
@@ -116,4 +115,42 @@ footer{
     color:white;
     text-align:center;
     padding:20px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .contact-container {
+        width: 95%;
+    }
+
 }
